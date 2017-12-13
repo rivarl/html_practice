@@ -1,0 +1,121 @@
+<html>
+  <head>
+    <meta name ="viewport" content="width=device-width, iniyial-scale=1.0" />
+  </head>
+  <!-- CSS  -->
+  <style>
+    body{
+      margin: 0;
+    }
+    .app{
+      position: relative;
+      height: 100%;
+      background-color: #FFFDF6;
+    }
+    /*classは.でidは#*/
+    .appbar{
+      background-color: #265366;
+      color: #fff;
+      /*余白*/
+      padding: 12px;
+      /*中央寄せ*/
+      text-align: center;
+      /*影：x y blur(ぼかす)*/
+      box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+    }
+    .memo-list{
+      padding-top: 2px;
+    }
+    .memo-list-item{
+      background-color: #fff;
+      padding: 12px;
+      /*border: 大きさ 実線 色*/
+      border: 1px solid #ddd;
+    }
+    .memo-list-item h3{
+      font-size: 18px;
+      margin: 0;
+    }
+    .memo-list-item p{
+      font-size: 11px;
+      color: #ababab;
+      margin: 0;
+    }
+    .memo-add-button{
+      width: 50px;
+    height: 50px;
+    background-color: #ef4a8e;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    line-height: 48px;
+    border-radius: 50px;
+    /*画面全体を基準にして(absolute)、.memo-add-buttonの親要素(ここではbody)
+    にポジション設定をしなければいけない*/
+    position: absolute;
+    /*下から10px*/
+    bottom: 24px;
+    /*右から10px*/
+    right: 24px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+  </style>
+
+  <!-- html -->
+  <body class="app">
+    <div>
+      <div class="appbar">
+        MEMOT
+      </div>
+
+
+      <div class="memo-list">
+        <div class="memo-list-item">
+          <h3>
+            講座のアイデア
+          </h3>
+          <p>
+            2017/12/8
+          </p>
+        </div>
+        <div class="memo-list-item">
+          <h3>
+            買い出し
+          </h3>
+          <p>
+            2017/12/8
+          </p>
+        </div>
+        <div class="memo-list-item">
+          <h3>
+            11月のTODOリスト
+          </h3>
+          <p>
+            2017/12/8
+          </p>
+        </div>
+        <div class="memo-list-item">
+          <h3>
+            講座のアイデア
+          </h3>
+          <p>
+            2017/12/8
+          </p>
+        </div>
+        <div class="memo-list-item">
+          <h3>
+            レシピ　カルボナーラ
+          </h3>
+          <p>
+            2017/12/8
+          </p>
+
+        </div>
+        <div class="memo-add-button">
+          +
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
